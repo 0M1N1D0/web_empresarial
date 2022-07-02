@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
 
 
 urlpatterns = [
@@ -23,3 +24,8 @@ urlpatterns = [
     # paths de app vista
     path('', include('vista.urls')),
 ]
+
+# si se tiene DEBUG True, se activa la configuración para servir ficheros media
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
