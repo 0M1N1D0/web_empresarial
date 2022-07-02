@@ -1,32 +1,32 @@
 """ Aquí estarán las vistas estáticas """
 
-from django.shortcuts import HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 def home(request): # pylint: disable=unused-argument
     """ vista home """
-    return HttpResponse("Inicio")
+    return render(request, "vista/home.html")
 
 def about(request): # pylint: disable=unused-argument
     """ vista about """
-    return HttpResponse("Historia")
+    return render(request, "vista/about.html")
 
 def services(request): # pylint: disable=unused-argument
     """ vista services """
-    return HttpResponse("Servicios")
+    return render(request, "vista/services.html")
 
 def store(request): # pylint: disable=unused-argument
     """ vista store """
-    return HttpResponse("Visítanos")
+    return render(request, "vista/store.html")
 
 def contact(request): # pylint: disable=unused-argument
     """ vista contact """
-    return HttpResponse("Contacto")
+    return render(request, "vista/contact.html")
 
 def blog(request): # pylint: disable=unused-argument
     """ vista blog """
-    return HttpResponse("Blog")
+    return render(request, "vista/blog.html")
 
 def sample(request): # pylint: disable=unused-argument
     """ vista sample """
-    return HttpResponse("Sample")
+    return render(request, "vista/sample.html")
