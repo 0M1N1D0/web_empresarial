@@ -23,6 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # paths de app vista
     path('', include('vista.urls')),
+    # paths de app services
+    path('services/', include('services.urls')),
 ]
 
 # si se tiene DEBUG True, se activa la configuración para servir ficheros media

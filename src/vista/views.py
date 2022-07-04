@@ -11,15 +11,11 @@ def about(request): # pylint: disable=unused-argument
     """ vista about """
     return render(request, "vista/about.html")
 
-def services(request): # pylint: disable=unused-argument
-    """ vista services """
-    return render(request, "vista/services.html")
-
 def store(request): # pylint: disable=unused-argument
     """ vista store """
     return render(request, "vista/store.html")
 
-def contact(request): # pylint: disable=unused-argument
+def contact(request): # pylin: disable=unused-argument
     """ vista contact """
     return render(request, "vista/contact.html")
 
