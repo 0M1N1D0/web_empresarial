@@ -4,6 +4,7 @@ from django.db import models
 from django.utils.timezone import now
 from django.contrib.auth.models import User # guarda todos los usuarios registrados en el admin site
 
+
 # Create your models here.
 class Category(models.Model):
     """ Modelo Category de la app blog """
