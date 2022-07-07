@@ -19,10 +19,6 @@ def contact(request): # pylin: disable=unused-argument
     """ vista contact """
     return render(request, "vista/contact.html")
 
-def blog(request): # pylint: disable=unused-argument
-    """ vista blog """
-    return render(request, "vista/blog.html")
-
 def sample(request): # pylint: disable=unused-argument
     """ vista sample """
     return render(request, "vista/sample.html")

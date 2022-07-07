@@ -25,6 +25,8 @@ urlpatterns = [
     path('', include('vista.urls')),
     # paths de app services
     path('services/', include('services.urls')),
+    # paths de app blog
+    path('blog/', include('blog.urls')),
 ]
 
 # si se tiene DEBUG True, se activa la configuración para servir ficheros media
